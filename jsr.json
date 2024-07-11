@@ -1,0 +1,5 @@
+{
+  "name": "@codedusting/create-nextcode-app",
+  "version": "1.0.0",
+  "exports": "./src/index.ts"
+}

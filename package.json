@@ -4,9 +4,6 @@
   "description": "Create web application with nextcode stack",
   "module": "src/index.ts",
   "type": "module",
-  "bin": {
-    "create-nextcode-app": "./dist/index.js"
-  },
   "scripts": {
     "build": "rm -rf dist && bun build src/index.ts --outdir dist",
     "start": "bun --watch src/index.ts"
@@ -44,5 +41,8 @@
     "fs-extra": "^11.2.0",
     "prompts": "^2.4.2",
     "rimraf": "^6.0.0"
+  },
+  "bin": {
+    "create-nextcode-app": "./dist/index.js"
   }
 }
