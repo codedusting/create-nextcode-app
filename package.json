@@ -1,0 +1,48 @@
+{
+  "name": "create-nextcode-app",
+  "version": "1.0.0",
+  "description": "Create web application with nextcode stack",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "create-nextcode-app": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && bun build src/index.ts --outdir dist",
+    "start": "bun --watch src/index.ts"
+  },
+  "author": {
+    "name": "Code Dusting",
+    "url": "https://codedusting.in",
+    "email": "codedusting@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codedusting/create-nextcode-app.git"
+  },
+  "keywords": [
+    "create-nextcode-app",
+    "next.js",
+    "lucia",
+    "tailwind",
+    "init.tips",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9",
+    "@types/rimraf": "^4.0.5",
+    "prettier": "^3.3.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs-extra": "^11.2.0",
+    "prompts": "^2.4.2",
+    "rimraf": "^6.0.0"
+  }
+}
