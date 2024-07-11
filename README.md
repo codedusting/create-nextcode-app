@@ -1,6 +1,6 @@
 <h1 align="center">Create NextCode App</h1>
 
-Scaffold a starting project using the [nextcode app](https://init.tips) using this interactice CLI.
+Scaffold a starting project using the nextcode app using this interactice CLI.
 
 ## Usage
 
