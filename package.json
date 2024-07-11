@@ -1,6 +1,6 @@
 {
   "name": "create-nextcode-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create web application with nextcode stack",
   "module": "src/index.ts",
   "type": "module",
