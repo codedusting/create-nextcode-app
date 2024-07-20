@@ -1,6 +1,6 @@
 <h1 align="center">Create NextCode App</h1>
 
-Scaffold a starting project using the nextcode app using this interactice CLI.
+Scaffold a starting project using the nextcode app using this interactive CLI.
 
 ## Usage
 
@@ -22,3 +22,4 @@ bunx create nextcode-app@latest
 - [LuciaAuth](https://lucia-auth.com/)
 - [ElysiaJS](https://elysiajs.com/)
 - [PayloadCMS](https://payloadcms.com/)
+- [Drizzle](https://orm.drizzle.team/)

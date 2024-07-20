@@ -3,36 +3,7 @@
 import prompts from "prompts";
 import createProject from "./helpers/create";
 import chalk from "chalk";
-
-const questions: Array<{
-  type: string;
-  name: string;
-  message: string;
-  choices?: Array<{ title: string; value: string }>;
-  initial?: number;
-}> = [
-  {
-    type: "text",
-    name: "name",
-    message: "What is your project name?",
-  },
-  {
-    type: "select",
-    name: "language",
-    message: "Do you want JavaScript or TypeScript?",
-    choices: [
-      {
-        title: "JavaScript",
-        value: "javascript",
-      },
-      {
-        title: "TypeScript",
-        value: "typescript",
-      },
-    ],
-    initial: 1,
-  },
-];
+import { questions } from "./questions";
 
 (async () => {
   const response: { name: string; language: string } = await prompts(
@@ -50,6 +21,7 @@ const questions: Array<{
   } else {
     console.log(chalk.bold.underline("\nCorrect choice!"));
   }
+  console.log(chalk.green.bold("\nInstalling..."));
   createProject(name);
   process.exit(0);
 })();
